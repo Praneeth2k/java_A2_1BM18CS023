@@ -49,7 +49,7 @@ class Student{
 
 
   double sgpa(){
-    int sum=0;
+    double sum=0;
     int deno=0;
     for(int i=0;i<no_subs;i++)
           sum+=(arr_credits[i])*(grade(arr_marks[i]));
