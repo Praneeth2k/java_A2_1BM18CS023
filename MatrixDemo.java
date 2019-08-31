@@ -1,5 +1,5 @@
 import java.util.*;
-class Matrix {
+public class Matrix {
     int mat[][]=new int[2][2];
     double inv[][]=new double[2][2];
     
@@ -28,7 +28,7 @@ class Matrix {
     
     void Inverse(){
         double d=Determinant();
-        if(bool()){
+        if(isSingular()){
             System.out.println("The inverse cannot be found as the deteminant is 0");
         }
         
@@ -40,7 +40,7 @@ class Matrix {
         }
     }
     
-    boolean bool(){
+    boolean isSingular(){
         if(Determinant()==0)
             return true;
         else 
@@ -56,7 +56,7 @@ class Matrix {
             System.out.print("\n");
         }
         System.out.println("The determinant of the matrix is "+Determinant());
-        if(!bool()){
+        if(!isSingular()){
             System.out.println("The inverse of the matrix  is");
             Inverse();
             for(double ar[]:inv){
@@ -66,7 +66,7 @@ class Matrix {
                 System.out.print("\n");
             }   
         }
-        if(bool()){
+        if(isSingular()){
             System.out.println("The matrix is singluar hence it's inverse can't be found");
         }
         else
