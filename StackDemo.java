@@ -60,8 +60,9 @@ class DS implements Stack{
         System.out.println("The deleted element is" +del);
     }
     public void display(){
-        for(int i=0;i<top;i++);
+        for(int i=0;i<=top;i++){
         System.out.print(stack[i]+" ");
+        }    
     }
 
 }
