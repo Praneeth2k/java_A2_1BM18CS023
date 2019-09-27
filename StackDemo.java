@@ -34,7 +34,7 @@ class SS implements Stack{
 
     }
      public void display(){
-         for(i=0;i<top;i++){
+         for(i=0;i<=top;i++){
          System.out.print(stack[i]+" ");}
      }
 }
